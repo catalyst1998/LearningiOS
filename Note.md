@@ -43,6 +43,8 @@
 >`UITabBarController`可以管理多个`UIViewController`，通过点击底部的按钮来实现页面的切换。
 创建4～5个viewcontroller，再通过`setviewcontrollers`方法添加到tabbarcontroller里。通过`tabbaritem.title`来设置每个tabbar item的名字
 
+UITabBarController中有delegate，
+
 ### UINavigationController
 初始化的时候可以设置rootviewcontroller作为栈底的view，在该view中设置一个点击事情，实现页面的跳转，这里用到了`tapGestureRecognizer` 回调函数，参数中的
 action要自定义。通过navigationItem的title、rightbarbuttonItem等进行顶部导航栏设置
@@ -53,6 +55,13 @@ action要自定义。通过navigationItem的title、rightbarbuttonItem等进行�
 ### UIWindow
 > UIWindow作为容器和viewcontroller协同工作
 
+### UITableView
+
+### UIColletionView
+
+### UICollectionViewLayout
+
+### UIScrollView
 
 
 
