@@ -12,11 +12,13 @@
 		7915D38E281F9C94009523AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7915D38D281F9C94009523AE /* Assets.xcassets */; };
 		7915D391281F9C94009523AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7915D38F281F9C94009523AE /* LaunchScreen.storyboard */; };
 		7915D394281F9C94009523AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D393281F9C94009523AE /* main.m */; };
-		7915D39C281FA843009523AE /* TESTUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D39B281FA843009523AE /* TESTUIView.m */; };
 		7915D39F281FC234009523AE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7915D39E281FC234009523AE /* Media.xcassets */; };
 		7915D3A6281FEB6F009523AE /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D3A5281FEB6F009523AE /* ViewController2.m */; };
 		7915D3A9282004E7009523AE /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D3A8282004E7009523AE /* VideoController.m */; };
 		7915D3AC28200E40009523AE /* RecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D3AB28200E40009523AE /* RecommandViewController.m */; };
+		7976C57E28237F2A00FD3BA8 /* GTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976C57D28237F2A00FD3BA8 /* GTableViewCell.m */; };
+		7976C5832823A9EE00FD3BA8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976C5822823A9EE00FD3BA8 /* DetailViewController.m */; };
+		7976C58928241E5500FD3BA8 /* GDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976C58828241E5500FD3BA8 /* GDeleteCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +31,6 @@
 		7915D390281F9C94009523AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7915D392281F9C94009523AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7915D393281F9C94009523AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7915D39A281FA843009523AE /* TESTUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESTUIView.h; sourceTree = "<group>"; };
-		7915D39B281FA843009523AE /* TESTUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESTUIView.m; sourceTree = "<group>"; };
 		7915D39E281FC234009523AE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		7915D3A4281FEB6F009523AE /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		7915D3A5281FEB6F009523AE /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
@@ -38,6 +38,12 @@
 		7915D3A8282004E7009523AE /* VideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
 		7915D3AA28200E40009523AE /* RecommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommandViewController.h; sourceTree = "<group>"; };
 		7915D3AB28200E40009523AE /* RecommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommandViewController.m; sourceTree = "<group>"; };
+		7976C57C28237F2A00FD3BA8 /* GTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTableViewCell.h; sourceTree = "<group>"; };
+		7976C57D28237F2A00FD3BA8 /* GTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTableViewCell.m; sourceTree = "<group>"; };
+		7976C5812823A9EE00FD3BA8 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7976C5822823A9EE00FD3BA8 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7976C58728241E5500FD3BA8 /* GDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDeleteCellView.h; sourceTree = "<group>"; };
+		7976C58828241E5500FD3BA8 /* GDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDeleteCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,39 +78,27 @@
 			children = (
 				7915D381281F9C93009523AE /* AppDelegate.h */,
 				7915D382281F9C93009523AE /* AppDelegate.m */,
-				7915D39D281FC157009523AE /* icon */,
-				7915D3A3281FE997009523AE /* ViewController */,
-				7915D39A281FA843009523AE /* TESTUIView.h */,
-				7915D39B281FA843009523AE /* TESTUIView.m */,
-				7915D38D281F9C94009523AE /* Assets.xcassets */,
-				7915D38F281F9C94009523AE /* LaunchScreen.storyboard */,
-				7915D392281F9C94009523AE /* Info.plist */,
-				7915D393281F9C94009523AE /* main.m */,
-			);
-			path = ViewDemo_52;
-			sourceTree = "<group>";
-		};
-		7915D39D281FC157009523AE /* icon */ = {
-			isa = PBXGroup;
-			children = (
 				7915D39E281FC234009523AE /* Media.xcassets */,
-			);
-			path = icon;
-			sourceTree = "<group>";
-		};
-		7915D3A3281FE997009523AE /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7915D3A7282004E7009523AE /* VideoController.h */,
-				7915D3AA28200E40009523AE /* RecommandViewController.h */,
-				7915D3AB28200E40009523AE /* RecommandViewController.m */,
-				7915D3A8282004E7009523AE /* VideoController.m */,
 				7915D387281F9C93009523AE /* ViewController.h */,
 				7915D388281F9C93009523AE /* ViewController.m */,
 				7915D3A4281FEB6F009523AE /* ViewController2.h */,
 				7915D3A5281FEB6F009523AE /* ViewController2.m */,
+				7915D3A7282004E7009523AE /* VideoController.h */,
+				7915D3A8282004E7009523AE /* VideoController.m */,
+				7915D3AA28200E40009523AE /* RecommandViewController.h */,
+				7915D3AB28200E40009523AE /* RecommandViewController.m */,
+				7976C57C28237F2A00FD3BA8 /* GTableViewCell.h */,
+				7976C57D28237F2A00FD3BA8 /* GTableViewCell.m */,
+				7976C5822823A9EE00FD3BA8 /* DetailViewController.m */,
+				7976C5812823A9EE00FD3BA8 /* DetailViewController.h */,
+				7915D38D281F9C94009523AE /* Assets.xcassets */,
+				7915D38F281F9C94009523AE /* LaunchScreen.storyboard */,
+				7976C58728241E5500FD3BA8 /* GDeleteCellView.h */,
+				7976C58828241E5500FD3BA8 /* GDeleteCellView.m */,
+				7915D392281F9C94009523AE /* Info.plist */,
+				7915D393281F9C94009523AE /* main.m */,
 			);
-			path = ViewController;
+			path = ViewDemo_52;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,11 +173,13 @@
 			files = (
 				7915D389281F9C93009523AE /* ViewController.m in Sources */,
 				7915D3AC28200E40009523AE /* RecommandViewController.m in Sources */,
+				7976C5832823A9EE00FD3BA8 /* DetailViewController.m in Sources */,
 				7915D383281F9C93009523AE /* AppDelegate.m in Sources */,
 				7915D3A6281FEB6F009523AE /* ViewController2.m in Sources */,
 				7915D3A9282004E7009523AE /* VideoController.m in Sources */,
-				7915D39C281FA843009523AE /* TESTUIView.m in Sources */,
+				7976C57E28237F2A00FD3BA8 /* GTableViewCell.m in Sources */,
 				7915D394281F9C94009523AE /* main.m in Sources */,
+				7976C58928241E5500FD3BA8 /* GDeleteCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +346,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,10 +6,10 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController/ViewController2.h"
-#import "ViewController/ViewController.h"
-#import "ViewController/VideoController.h"
-#import "ViewController/RecommandViewController.h"
+#import "ViewController2.h"
+#import "ViewController.h"
+#import "VideoController.h"
+#import "RecommandViewController.h"
 
 //#import "TESTUIView.h"
 @interface AppDelegate ()<UITabBarControllerDelegate>
@@ -28,21 +28,22 @@
     //创建TabBarController
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
     
-   
+    tabbarController.title = @"Telegram";
+
     //设置window的rootcontroller为tabbarcontroller
 //    self.window.rootViewController = tabbarController;
     
     //创建四个tabbarcontroller控制的viewcontroller
     ViewController *controller1 = [[ViewController alloc] init];
     controller1.view.backgroundColor = [UIColor whiteColor];
-    controller1.tabBarItem.title = @"微信";
+    controller1.tabBarItem.title = @"Chats";
 
     
     /*
      将通讯录页面换成navigationcontroller,并将自定义的viewcontroller作为rootview
      */
     ViewController2 *controller2 = [[ViewController2 alloc] init];
-    controller2.tabBarItem.title = @"通讯录";
+    controller2.tabBarItem.title = @"Contacts";
 
 //    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc]init]];
 //    navigationController.view.backgroundColor = [UIColor yellowColor];
@@ -52,14 +53,14 @@
     
     VideoController *controller3 = [[VideoController alloc] init];
 //    controller3.view.backgroundColor = [UIColor blueColor];
-    controller3.tabBarItem.title = @"发现";
+    controller3.tabBarItem.title = @"Discovery";
     
     RecommandViewController *controller4 = [[RecommandViewController alloc] init];
-    controller4.tabBarItem.title = @"推荐";
+    controller4.tabBarItem.title = @"Recommand";
     
     UIViewController *controller5 = [[UIViewController alloc] init];
 //    controller4.view.backgroundColor = [UIColor greenColor];
-    controller5.tabBarItem.title = @"我的";
+    controller5.tabBarItem.title = @"Settings";
 
     
     //将上面的四个viewcontroller加入到tabbarcontroller里
