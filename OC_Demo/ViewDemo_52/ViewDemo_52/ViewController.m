@@ -10,23 +10,35 @@
 #import "DetailViewController.h"
 #import "GDeleteCellView.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate,GTableViewCellDelegate>
-
+@property (nonatomic,strong,readwrite) UITableView *tableView;
+@property   (nonatomic,strong,readwrite) NSMutableArray *dataArray;
 @end
 
 @implementation ViewController
 
+- (instancetype)init{
+    self = [super init];
+    if(self){
+        _dataArray = @[].mutableCopy;
+        for(int i = 0; i < 5; i++){
+            [_dataArray addObject:@(i)];
+        }
+    }
+    return self;
+    
+}
    
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    tableView.dataSource = self;
-    tableView.delegate = self;
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushController)];
-    [tableView addGestureRecognizer:tapGesture];     //tableView注册手势事件
+    [_tableView addGestureRecognizer:tapGesture];     //tableView注册手势事件
     
-    [self.view addSubview:tableView];
+    [self.view addSubview:_tableView];
 }
 
 //设置每行的行高
@@ -35,7 +47,7 @@
 }
 //设置有多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return _dataArray.count;
 }
 
 
@@ -57,10 +69,20 @@
 - (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton{
     
     GDeleteCellView *deleteView = [[GDeleteCellView alloc] initWithFrame:self.view.bounds];
-    [deleteView showDeleteView];
+    CGRect rect = [tableViewCell convertRect:deleteButton.frame toView:nil];
+    
+    __weak typeof(self) wself =self;
+    
+    [deleteView showDeleteViewFromPoint:rect.origin clickBlock:^{
+        //删除该行
+        __strong typeof(wself) strongSelf = wself;
+        NSIndexPath *delIndexPath = [strongSelf.tableView indexPathForCell:tableViewCell];
+        [strongSelf.dataArray removeObjectAtIndex:delIndexPath.row];
+        [strongSelf.tableView deleteRowsAtIndexPaths:@[delIndexPath]                withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
     NSLog(@"----");
 }
-
+ 
 
 
 -(void) pushController{
