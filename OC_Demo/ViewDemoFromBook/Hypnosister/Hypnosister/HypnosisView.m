@@ -18,10 +18,16 @@
     self = [super initWithFrame:frame];
     if(self){
         self.backgroundColor = [UIColor clearColor];
-        self.circleColor = [UIColor redColor];
+        self.circleColor = [UIColor lightGrayColor];
         
     }
     return self;
+}
+
+- (void)setCircleColor:(UIColor *)circleColor{
+    _circleColor = circleColor;
+    [self setNeedsDisplay];     //自定义的UIView的子类需要发送该消息，来标记视图需要重绘
+    //setNeedsDisplayInRect:消息标记视图的某一个区域需要重绘
 }
 /*
  重写dramRect方法，添加绘图逻辑，画一个圆
