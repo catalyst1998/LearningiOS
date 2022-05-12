@@ -1,17 +1,17 @@
 //
-//  VideoController.m
+//  GTVideoViewController.m
 //  ViewDemo_52
 //
 //  Created by Goggles on 2022/5/2.
 //
 
-#import "VideoController.h"
+#import "GTVideoViewController.h"
 
-@interface VideoController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface GTVideoViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @end
 
-@implementation VideoController
+@implementation GTVideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,14 +53,6 @@
         return CGSizeMake((self.view.frame.size.width-10)/2, 200);
     }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

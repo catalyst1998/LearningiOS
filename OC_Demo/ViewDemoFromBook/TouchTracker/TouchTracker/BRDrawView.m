@@ -47,9 +47,10 @@
         //单击手势
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
         
+        [tapRecognizer addTarget:self  action:@selector(delete)];
+        
         tapRecognizer.numberOfTapsRequired = 1;
         tapRecognizer.delaysTouchesBegan = YES;
-        
         [tapRecognizer requireGestureRecognizerToFail:doubeTapRecognizer]; //相当于双击的优先权大于单击，比如三击会被识别为双击加单击
         
         
@@ -70,7 +71,7 @@
 }
 
 - (void)drawRect:(CGRect)rect{
-    NSLog(@"+++++++");
+//    NSLog(@");
     [[UIColor blackColor] set];
     for (BRLine *line in self.finishedLines) {
         [self strokeLine:line];
@@ -85,13 +86,14 @@
     }
     
     if(self.selectedLine){
+        NSLog(@"greenline");
         [[UIColor greenColor] set];
         [self strokeLine:self.selectedLine];
     }
 }
 
 - (void) strokeLine:(BRLine *)line{
-    NSLog(@"=====");
+    NSLog(@"划线");
     UIBezierPath *path = [UIBezierPath bezierPath];
     path.lineWidth = 7;
     path.lineCapStyle = kCGLineCapRound;
@@ -181,18 +183,19 @@
 }
 
 -(void) tap:(UIGestureRecognizer *)gr{
-    NSLog(@"recognized tap");
+    NSLog(@"tap调用了");
+    
     CGPoint point = [gr locationInView:self];   //返回发生手势的位置信息
     
     self.selectedLine = [self lineAtPoint:point];
 
     [self setNeedsDisplay];
     
-    if(self.selectedLine){
-
-        
-        [self delete];
-    }
+//    if(self.selectedLine){
+//
+//
+//        [self delete];
+//    }
 //    if(self.selectedLine){
 //        //是视图成为UIMenuitem动作消息的目标
 //        [self becomeFirstResponder];
@@ -248,7 +251,7 @@
     return NO;
 }
 -(void) delete{
-
+    sleep(0.5);
     NSLog(@"delete");
     [self.finishedLines removeObject:self.selectedLine];
 
@@ -269,6 +272,8 @@
 }
 
 -(void) moveLine:(UIPanGestureRecognizer *)gr{
+    NSLog(@"pan调用了");
+
     if(!self.selectedLine){
         return ;
     }
@@ -279,6 +284,7 @@
         CGPoint begin = self.selectedLine.begin;
         CGPoint end = self.selectedLine.end;
         
+    
         begin.x += translation.x;
         begin.y += translation.y;
         

@@ -5,13 +5,13 @@
 //  Created by Goggles on 2022/5/2.
 //
 
-#import "RecommandViewController.h"
+#import "GTRecommendViewController.h"
 
-@interface RecommandViewController () <UIScrollViewDelegate,UIGestureRecognizerDelegate>
+@interface GTRecommendViewController () <UIScrollViewDelegate,UIGestureRecognizerDelegate>
 
 @end
 
-@implementation RecommandViewController
+@implementation GTRecommendViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

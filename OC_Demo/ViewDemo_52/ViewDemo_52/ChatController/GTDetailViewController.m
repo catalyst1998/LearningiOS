@@ -1,18 +1,18 @@
 //
-//  DetailViewController.m
+//  GTDetailViewController.m
 //  ViewDemo_52
 //
 //  Created by Goggles on 2022/5/5.
 //
 
-#import "DetailViewController.h"
+#import "GTDetailViewController.h"
 #import <WebKit/WebKit.h>
-@interface DetailViewController ()<WKNavigationDelegate>
+@interface GTDetailViewController ()<WKNavigationDelegate>
 @property (nonatomic,strong,readwrite) WKWebView *webView;
 @property (nonatomic,strong,readwrite) UIProgressView *progressView;
 @end
 
-@implementation DetailViewController
+@implementation GTDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,16 +1,18 @@
 //
-//  ViewController2.m
+//  GTContactViewController.m
 //  ViewDemo_52
 //
 //  Created by Goggles on 2022/5/2.
 //
 
-#import "ViewController2.h"
+#import "GTContactViewController.h"
 
-@interface ViewController2 ()<UITableViewDataSource,UITableViewDelegate>
+@interface GTContactViewController ()<UITableViewDataSource,UITableViewDelegate>
 @end
 
-@implementation ViewController2
+@implementation GTContactViewController
+
+#pragma mark - life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,6 +23,9 @@
     tableView.delegate = self;
     [self.view addSubview:tableView];
 }
+
+
+#pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
@@ -34,6 +39,8 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 40;
@@ -49,6 +56,10 @@
     
     return cell;
 }
+
+
+#pragma mark - TapGesture Selector
+
 -(void) pushController{
     //创建一个要跳转的页面
     UIViewController *viewController = [[UIViewController alloc] init];
@@ -58,14 +69,5 @@
     viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Follow" style:UIBarButtonItemStylePlain target:self action:nil];    //不设置响应
     [self.navigationController pushViewController:viewController animated:YES];
 }
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

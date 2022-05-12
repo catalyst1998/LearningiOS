@@ -21,11 +21,13 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self){
+        
         [self.contentView addSubview:({
             self.pictureImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20,15, 50, 50)];
             self.pictureImageView.contentMode =  UIViewContentModeScaleAspectFit;
             self.pictureImageView;
         })];
+        
         [self.contentView addSubview:({
             self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(80,20,150,20)];
 //            self.titleLabel.backgroundColor = [UIColor grayColor];
@@ -41,6 +43,7 @@
             self.messageLabel.textColor = [UIColor grayColor];
             self.messageLabel;
         })];
+        
         [self.contentView addSubview:({
             self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(250,60,100,20)];
 //            self.timeLabel.backgroundColor = [UIColor grayColor];
@@ -55,6 +58,11 @@
             [self.deleteButton setTitle:@"delete" forState:UIControlStateNormal];
             [self.deleteButton setTitle:@"deleting" forState:UIControlStateHighlighted];
             [self.deleteButton addTarget:self action:@selector(deleteButtonClick) forControlEvents:UIControlEventTouchUpInside];
+            
+            //调用CALayer，绘制圆角
+            self.deleteButton.layer.cornerRadius = 15;
+            self.deleteButton.layer.masksToBounds = YES;
+            
             self.deleteButton;
         })];
          
