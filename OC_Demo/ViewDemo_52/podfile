@@ -1,0 +1,11 @@
+   
+platform :ios, "14.0"
+
+inhibit_all_warnings!
+
+target 'ViewDemo_52' do
+	pod 'AFNetworking'
+  	pod 'SDWebImage'
+end
+
+

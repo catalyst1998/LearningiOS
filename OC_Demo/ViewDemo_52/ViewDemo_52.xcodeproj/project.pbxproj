@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79141ACD282E117F001712F0 /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79141ACC282E117F001712F0 /* GTListItem.m */; };
+		79141AD0282E65E3001712F0 /* GTSongItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79141ACF282E65E3001712F0 /* GTSongItem.m */; };
+		79141AD3282E76F1001712F0 /* GTSongLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 79141AD2282E76F1001712F0 /* GTSongLoader.m */; };
 		7915D383281F9C93009523AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D382281F9C93009523AE /* AppDelegate.m */; };
-		7915D389281F9C93009523AE /* GTChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D388281F9C93009523AE /* GTChatViewController.m */; };
+		7915D389281F9C93009523AE /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D388281F9C93009523AE /* GTNewsViewController.m */; };
 		7915D38E281F9C94009523AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7915D38D281F9C94009523AE /* Assets.xcassets */; };
 		7915D391281F9C94009523AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7915D38F281F9C94009523AE /* LaunchScreen.storyboard */; };
 		7915D394281F9C94009523AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7915D393281F9C94009523AE /* main.m */; };
@@ -19,14 +22,22 @@
 		7976C57E28237F2A00FD3BA8 /* GTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976C57D28237F2A00FD3BA8 /* GTableViewCell.m */; };
 		7976C5832823A9EE00FD3BA8 /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976C5822823A9EE00FD3BA8 /* GTDetailViewController.m */; };
 		7976C58928241E5500FD3BA8 /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976C58828241E5500FD3BA8 /* GTDeleteCellView.m */; };
+		79EA540B282D110800FE8F32 /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EA540A282D110800FE8F32 /* GTListLoader.m */; };
+		A79D2EFEB8767A0B2CB088ED /* libPods-ViewDemo_52.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9929246F58CAB5060E02987 /* libPods-ViewDemo_52.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79141ACB282E117F001712F0 /* GTListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
+		79141ACC282E117F001712F0 /* GTListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
+		79141ACE282E65E3001712F0 /* GTSongItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSongItem.h; sourceTree = "<group>"; };
+		79141ACF282E65E3001712F0 /* GTSongItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSongItem.m; sourceTree = "<group>"; };
+		79141AD1282E76F1001712F0 /* GTSongLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSongLoader.h; sourceTree = "<group>"; };
+		79141AD2282E76F1001712F0 /* GTSongLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSongLoader.m; sourceTree = "<group>"; };
 		7915D37E281F9C93009523AE /* ViewDemo_52.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewDemo_52.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7915D381281F9C93009523AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7915D382281F9C93009523AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7915D387281F9C93009523AE /* GTChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTChatViewController.h; sourceTree = "<group>"; };
-		7915D388281F9C93009523AE /* GTChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTChatViewController.m; sourceTree = "<group>"; };
+		7915D387281F9C93009523AE /* GTNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
+		7915D388281F9C93009523AE /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		7915D38D281F9C94009523AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7915D390281F9C94009523AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7915D392281F9C94009523AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +55,11 @@
 		7976C5822823A9EE00FD3BA8 /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		7976C58728241E5500FD3BA8 /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
 		7976C58828241E5500FD3BA8 /* GTDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
+		79EA5409282D110800FE8F32 /* GTListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListLoader.h; sourceTree = "<group>"; };
+		79EA540A282D110800FE8F32 /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
+		891260C504D2D2CB89A841E3 /* Pods-ViewDemo_52.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDemo_52.release.xcconfig"; path = "Target Support Files/Pods-ViewDemo_52/Pods-ViewDemo_52.release.xcconfig"; sourceTree = "<group>"; };
+		B57329A70063BD446E4EFE7D /* Pods-ViewDemo_52.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewDemo_52.debug.xcconfig"; path = "Target Support Files/Pods-ViewDemo_52/Pods-ViewDemo_52.debug.xcconfig"; sourceTree = "<group>"; };
+		C9929246F58CAB5060E02987 /* libPods-ViewDemo_52.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViewDemo_52.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +67,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79D2EFEB8767A0B2CB088ED /* libPods-ViewDemo_52.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79141AC8282E10F8001712F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79EA5409282D110800FE8F32 /* GTListLoader.h */,
+				79EA540A282D110800FE8F32 /* GTListLoader.m */,
+				79141ACB282E117F001712F0 /* GTListItem.h */,
+				79141ACC282E117F001712F0 /* GTListItem.m */,
+				79141ACE282E65E3001712F0 /* GTSongItem.h */,
+				79141ACF282E65E3001712F0 /* GTSongItem.m */,
+				79141AD1282E76F1001712F0 /* GTSongLoader.h */,
+				79141AD2282E76F1001712F0 /* GTSongLoader.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79141AC9282E112B001712F0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7976C57D28237F2A00FD3BA8 /* GTableViewCell.m */,
+				7976C57C28237F2A00FD3BA8 /* GTableViewCell.h */,
+				7976C58728241E5500FD3BA8 /* GTDeleteCellView.h */,
+				7976C58828241E5500FD3BA8 /* GTDeleteCellView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		79141ACA282E1132001712F0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7915D388281F9C93009523AE /* GTNewsViewController.m */,
+				7915D387281F9C93009523AE /* GTNewsViewController.h */,
+				7976C5822823A9EE00FD3BA8 /* GTDetailViewController.m */,
+				7976C5812823A9EE00FD3BA8 /* GTDetailViewController.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		7915D375281F9C93009523AE = {
 			isa = PBXGroup;
 			children = (
 				7915D380281F9C93009523AE /* ViewDemo_52 */,
 				7915D37F281F9C93009523AE /* Products */,
+				EA3EB62E388F729BB0A31066 /* Pods */,
+				CE4820FA8C1EC420F1198520 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +132,7 @@
 		7915D380281F9C93009523AE /* ViewDemo_52 */ = {
 			isa = PBXGroup;
 			children = (
-				79EA5405282D08E800FE8F32 /* ChatController */,
+				79EA5405282D08E800FE8F32 /* NewsController */,
 				79EA5406282D096400FE8F32 /* ContactController */,
 				79EA5407282D098000FE8F32 /* VideoController */,
 				79EA5408282D098D00FE8F32 /* RecommendController */,
@@ -91,19 +147,14 @@
 			path = ViewDemo_52;
 			sourceTree = "<group>";
 		};
-		79EA5405282D08E800FE8F32 /* ChatController */ = {
+		79EA5405282D08E800FE8F32 /* NewsController */ = {
 			isa = PBXGroup;
 			children = (
-				7915D387281F9C93009523AE /* GTChatViewController.h */,
-				7915D388281F9C93009523AE /* GTChatViewController.m */,
-				7976C5822823A9EE00FD3BA8 /* GTDetailViewController.m */,
-				7976C5812823A9EE00FD3BA8 /* GTDetailViewController.h */,
-				7976C57D28237F2A00FD3BA8 /* GTableViewCell.m */,
-				7976C57C28237F2A00FD3BA8 /* GTableViewCell.h */,
-				7976C58728241E5500FD3BA8 /* GTDeleteCellView.h */,
-				7976C58828241E5500FD3BA8 /* GTDeleteCellView.m */,
+				79141ACA282E1132001712F0 /* controller */,
+				79141AC9282E112B001712F0 /* view */,
+				79141AC8282E10F8001712F0 /* Model */,
 			);
-			path = ChatController;
+			path = NewsController;
 			sourceTree = "<group>";
 		};
 		79EA5406282D096400FE8F32 /* ContactController */ = {
@@ -133,6 +184,23 @@
 			path = RecommendController;
 			sourceTree = "<group>";
 		};
+		CE4820FA8C1EC420F1198520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9929246F58CAB5060E02987 /* libPods-ViewDemo_52.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA3EB62E388F729BB0A31066 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B57329A70063BD446E4EFE7D /* Pods-ViewDemo_52.debug.xcconfig */,
+				891260C504D2D2CB89A841E3 /* Pods-ViewDemo_52.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7915D397281F9C94009523AE /* Build configuration list for PBXNativeTarget "ViewDemo_52" */;
 			buildPhases = (
+				B931F9934E2F92520544DA18 /* [CP] Check Pods Manifest.lock */,
 				7915D37A281F9C93009523AE /* Sources */,
 				7915D37B281F9C93009523AE /* Frameworks */,
 				7915D37C281F9C93009523AE /* Resources */,
@@ -198,16 +267,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B931F9934E2F92520544DA18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViewDemo_52-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7915D37A281F9C93009523AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7915D389281F9C93009523AE /* GTChatViewController.m in Sources */,
+				79141AD0282E65E3001712F0 /* GTSongItem.m in Sources */,
+				7915D389281F9C93009523AE /* GTNewsViewController.m in Sources */,
+				79141AD3282E76F1001712F0 /* GTSongLoader.m in Sources */,
 				7915D3AC28200E40009523AE /* GTRecommendViewController.m in Sources */,
 				7976C5832823A9EE00FD3BA8 /* GTDetailViewController.m in Sources */,
 				7915D383281F9C93009523AE /* AppDelegate.m in Sources */,
 				7915D3A6281FEB6F009523AE /* GTContactViewController.m in Sources */,
+				79EA540B282D110800FE8F32 /* GTListLoader.m in Sources */,
+				79141ACD282E117F001712F0 /* GTListItem.m in Sources */,
 				7915D3A9282004E7009523AE /* GTVideoViewController.m in Sources */,
 				7976C57E28237F2A00FD3BA8 /* GTableViewCell.m in Sources */,
 				7915D394281F9C94009523AE /* main.m in Sources */,
@@ -341,6 +439,7 @@
 		};
 		7915D398281F9C94009523AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57329A70063BD446E4EFE7D /* Pods-ViewDemo_52.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,6 +466,7 @@
 		};
 		7915D399281F9C94009523AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891260C504D2D2CB89A841E3 /* Pods-ViewDemo_52.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

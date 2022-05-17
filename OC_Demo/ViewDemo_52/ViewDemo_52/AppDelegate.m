@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import "GTContactViewController.h"
-#import "GTChatViewController.h"
+#import "GTNewsViewController.h"
 #import "GTVideoViewController.h"
 #import "GTRecommendViewController.h"
 
@@ -20,35 +20,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
-	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.rootViewController = [[ViewController alloc] init];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	self.window.backgroundColor = [UIColor whiteColor];
 
 	//创建TabBarController
 	UITabBarController *tabbarController = [[UITabBarController alloc] init];
 
-	tabbarController.title = @"Telegram";
+	tabbarController.title = @"Fake News";
 
 	//设置window的rootcontroller为tabbarcontroller
 //    self.window.rootViewController = tabbarController;
 
 	//创建四个tabbarcontroller控制的viewcontroller
-	GTChatViewController *chatViewController = [[GTChatViewController alloc] init];
-	chatViewController.view.backgroundColor = [UIColor whiteColor];
-	chatViewController.tabBarItem.title = @"Chats";
+	GTNewsViewController *newsViewController = [[GTNewsViewController alloc] init];
+	newsViewController.view.backgroundColor = [UIColor whiteColor];
+	newsViewController.tabBarItem.title = @"News";
 
 
 	/*
 	   将通讯录页面换成navigationcontroller,并将自定义的viewcontroller作为rootview
 	 */
-	GTContactViewController *contactViewController = [[GTContactViewController alloc] init];
-	contactViewController.tabBarItem.title = @"Contacts";
-
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc]init]];
-//    navigationController.view.backgroundColor = [UIColor yellowColor];
-//    navigationController.tabBarItem.title = @"通讯录";
-
+//	GTContactViewController *contactViewController = [[GTContactViewController alloc] init];
+//	contactViewController.tabBarItem.title = @"Contacts";
 
 
 	GTVideoViewController *videoViewController = [[GTVideoViewController alloc] init];
@@ -64,7 +58,7 @@
 
 
 	//将上面的四个viewcontroller加入到tabbarcontroller里
-	[tabbarController setViewControllers:@[chatViewController,contactViewController,videoViewController,recommandViewController,settingViewController]];
+	[tabbarController setViewControllers:@[newsViewController,videoViewController,recommandViewController,settingViewController]];
 
 	tabbarController.delegate = self;
 	//创建一个NavigationController
@@ -85,3 +79,4 @@
 	NSLog(@"dhsgdbhs");
 }
 @end
+ 
